@@ -19,21 +19,34 @@
     }
   </style>
 </head>
-<nav class="navbar">
-  <ul>
-    <li><a href="{{ url_for('home') }}">Home</a></li>
-    <li><a href="{{ url_for('explore') }}">Explore</a></li>
-    <li><a href="{{ url_for('about') }}">About</a></li>
-    <li><a href="{{ url_for('contact') }}">Contact</a></li>
-  </ul>
-</nav>
-<body>
-  <main class="bg">
-    <div class="circle">
-      <h1>CAREER<span class="parisienne">Compass</span></h1>
-      <a href="#recommendation" class="btn">Start Exploring</a>
-    </div>
-  </main>
+<body class="home-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo-link">
+            <img src="{{ url_for('static', filename='compass.png') }}" alt="Compass Logo" class="nav-logo">
+            </a>
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/explore">Explore</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <main class="bg">
+        <div class="circle">
+          <h1>CAREER<span class="parisienne">Compass</span></h1>
+          <a href="#recommendation" class="btn">Start Exploring</a>
+        </div>
+    </main>
 
     <section id="about" class="about-section">
     <div class="overlay">
